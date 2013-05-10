@@ -1,0 +1,64 @@
+@noname is a superset of ecmascript x ( based on (latest) specification of ecmascript ).
+
+The goal is to keep all stuff in the compiler and interpretor and in language itself ( of course in libraries ) as close as possible to
+ecmaspecifications because the first target for the compiler and stuff is ecmascript itself.
+This will not change in future, because one of the goal is simpler web developement so if browser will target a superior version of ecmascript,
+the language have to compile to that version.
+
+The folowing will apply as exception from above and shure it can change in future
+
+1.remove  function keyword from function definition in language (of course using will not hurt much )
+2.language components will be decorated (as @Annotation in java or [] class attributes in csharp ) using special comment syntax.
+3.everyting that is "superset" will be implemented as special comment if possible
+4.it is a must on ui libraries to simplify the _laying-out-with-css_ problem, even using a superset of css3 which will be rendered | compiled to 
+javascript | css in version suported by browser. 
+
+5. the language must implement constructs for loading c code -> from .h definition or other languages 
+6. if possible language must implement ( proposal:as special comment ) constructs for loading libraries for other languages 
+(python, perl, php)
+//@not_real_problem
+7. the parser has to be smart enough to accept !#/bin/bash like script comment to be used in real bash (or another solution for this is required... look future to ksh or csh or ... for solution )
+8.the bash-replacement-shell has to be smart enough to allow running ( of course, is at the end a shell ) existing commands with parameters.
+also it has to allow all bash and other shells functionality (at least tab completion... is not raw bsd shell ugly without? )
+
+9.if required, take a look at upstart. at this time i think upstart is more complicated than system-v with no real benefits at this time...
+10. config files will be xml or json or .ini format (yes, old plain ini is good !!! ) . Other formats are welcome if simple enough
+
+11. we badly need a replacement for m4... 
+
+12. keep-it-simple. not stupid. it is already very complicated what we want todo  ;)
+
+The parser has to be keept simple and as much as possible compatible with rhino, spidermonkey and v8 engines.
+The language constructs had to be as simple as possible to be easy to implement in @noname 2 other_language translation
+
+The language translators had to implements in lowest-best language. For example,
+the csharp code will be generated to be compatible with .net 2.0 constructs even the @noname has constructs similar to linq
+because we want to be compatible with mono and old systems with old versions of mono. So.... delegate ;).
+This refer also to python constructs and perl, php, or java ( targteting java 5 ? or 6 )
+
+The language translators had to be smart enough to emulate constructs like generics (in @noname ) in target language if not suported
+(for example in c , for example c++ will use template system ).
+
+How about multiple inheritance ? @noname will implement at least interfaces -> WITH FIELDS (something like phantom ) even no ecmascript specification
+
+The translator will provide from start option to target ( like swig for example ) language ( for example 
+
+translate source.noname output.java -tversion:1.6 ). Translator will be (maybe, if someone will have time to do that ) to replace also swig
+
+If version not implemented maybe someone will write in future an implementation for specific translation version.
+
+The translator had to auto identify @noname language version of input file | to specify the language version of input file |...
+
+
+
+
+
+
+
+
+For example, lin
+
+
+
+
+What is wrong
