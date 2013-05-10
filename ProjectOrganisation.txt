@@ -1,0 +1,30 @@
+Project structure:
+
+utils -> store compiler frontends
+jsc -> store "nonameIsNotJavascript"-to-js compiler and "nonameIsNotJavascript"-to-ast-tree compiler etc.
+jsc/langdef
+libs -> store libraries
+libs->native -> store libraries writed in "noname" language (the language itself ).
+libs->js -> store libraries writed in js ( like native nodejs libraries and packages, jquery, dojo, etc ).
+apps ->browser -> a browser application that implements full css3 html5 and ecmascript | noname spec. it will be for nonameos what 
+is explorer for windows. or chrome for chrome os. 
+wrappers -> wrapper projects for windows libraries (windows ) or x libraries or ... or... gnome or qt or kde or...
+
+replacements-> replacement projects for linux and windows components ->
+
+vm -> ???
+vm->toclass ??
+vm->tomsil ?
+
+ide-> ide integration
+ide-> eclipse
+ide-> sharpdevelop
+ide-> flashdevelop
+ide->monodevelop
+ide->visualstudio(????)
+ide->shared
+
+shared -> common stuff
+specs -> language specifiations, .g, .bnf and other
+stuff -> some things that not fit in other places
+
